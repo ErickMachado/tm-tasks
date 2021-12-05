@@ -1,13 +1,4 @@
 {
-  "name": "tm-todo",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
-  },
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
@@ -29,5 +20,14 @@
     "prettier": "^2.2.1",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
-  }
+  },
+  "scripts": {
+    "build": "vue-cli-service build",
+    "dev": "vue-cli-service serve",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "name": "tm-todo",
+  "private": true,
+  "version": "0.0.1"
 }
