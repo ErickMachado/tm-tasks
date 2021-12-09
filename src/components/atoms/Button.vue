@@ -1,12 +1,19 @@
 <template>
-  <button class="btn" @click="$emit('click')">
+  <button :class="['btn', { 'is-dark': dark }]" @click="$emit('click')">
     <slot />
   </button>
 </template>
 
 <script lang="ts">
 export default {
-  name: 'Button'
+  name: 'Button',
+  props: {
+    dark: {
+      default: false,
+      required: false,
+      type: Boolean
+    }
+  }
 }
 </script>
 
@@ -32,6 +39,15 @@ export default {
   &:disabled {
     cursor: not-allowed;
     opacity: 0.7;
+  }
+
+  &.is-dark {
+    background: $dark;
+    color: $light;
+
+    &:not([disabled]):hover {
+      background: rgba($dark, 0.7);
+    }
   }
 }
 </style>

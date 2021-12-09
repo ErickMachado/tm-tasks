@@ -3,14 +3,15 @@
     <transition mode="out-in">
       <component :is="activeComponent" @step:change="handleStepChange" />
     </transition>
+    <LoadingScreen />
   </div>
 </template>
 
 <script>
-import { LandingIntro, UserForm } from '@/components/molecules'
+import { LandingIntro, LoadingScreen, UserForm } from '@/components/molecules'
 
 export default {
-  components: { LandingIntro, UserForm },
+  components: { LandingIntro, LoadingScreen, UserForm },
   data: () => ({
     activeComponent: 'LandingIntro'
   }),

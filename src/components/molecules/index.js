@@ -1,2 +1,5 @@
 export { default as LandingIntro } from './LandingIntro.vue'
 export { default as UserForm } from './UserForm.vue'
+export { default as Header } from './Header.vue'
+export { default as TaskItem } from './TaskItem.vue'
+export { default as LoadingScreen } from './LoadingScreen.vue'
