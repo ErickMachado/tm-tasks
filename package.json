@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
+    "dev": "vue-cli-service serve",
     "lint": "vue-cli-service lint",
-    "dev": "vue-cli-service serve"
+    "start": "node main.js",
+    "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
     "core-js": "^3.6.5",
