@@ -3,7 +3,12 @@
     <h1>What is your name? ✨</h1>
     <form @submit.prevent="handleSessionCreation">
       <div class="user-form__input">
-        <input v-model="name" type="text" placeholder="First name" />
+        <input
+          v-model="name"
+          type="text"
+          placeholder="First name"
+          data-jest="name-input"
+        />
         <svg
           width="24"
           height="24"
@@ -29,7 +34,7 @@
           />
         </svg>
       </div>
-      <Button :disabled="!name">
+      <Button :disabled="!name" data-jest="done-btn">
         Done
         <img src="@/assets/images/check.svg" alt="" />
       </Button>

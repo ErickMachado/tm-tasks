@@ -1,11 +1,15 @@
 <template>
   <header class="header">
     <div class="header__tasks-info">
-      <h1>Hello, {{ getUsername }}! 👋</h1>
-      <p>🕐 {{ getRemainingTasks.length }} task remaining</p>
-      <p>✅ {{ getCompletedTasks.length }} tasks completed</p>
+      <h1 data-jest="greeting">Hello, {{ getUsername }}! 👋</h1>
+      <p data-jest="remaining-tasks">
+        🕐 {{ getRemainingTasks.length }} task remaining
+      </p>
+      <p data-jest="completed-tasks">
+        ✅ {{ getCompletedTasks.length }} tasks completed
+      </p>
     </div>
-    <h2>{{ currentDate }}</h2>
+    <h2 data-jest="current-date">{{ currentDate }}</h2>
   </header>
 </template>
 

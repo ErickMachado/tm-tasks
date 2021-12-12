@@ -1,3 +1,6 @@
 module.exports = {
-  preset: '@vue/cli-plugin-unit-jest'
+  bail: true,
+  collectCoverageFrom: ['<rootDir>/src/components/**'],
+  preset: '@vue/cli-plugin-unit-jest',
+  rootDir: __dirname
 }

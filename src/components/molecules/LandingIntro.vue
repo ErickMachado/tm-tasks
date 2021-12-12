@@ -2,7 +2,10 @@
   <div class="intro">
     <h1>TM Tasks</h1>
     <h2>Your daily tasks management.</h2>
-    <Button @click="$emit('step:change', 'UserForm')">
+    <Button
+      @click="$emit('step:change', 'UserForm')"
+      data-jest="get-started-btn"
+    >
       Get started
       <img src="@/assets/images/arrow-right.svg" alt="" />
     </Button>

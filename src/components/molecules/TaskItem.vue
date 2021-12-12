@@ -1,11 +1,15 @@
 <template>
   <li :class="['task-item', { 'is-complete': task.complete }]">
-    <h3>{{ task.title }}</h3>
+    <h3 data-jest="task-title">{{ task.title }}</h3>
     <div class="task-item__actions">
-      <button v-show="!task.complete" @click="$emit('complete', task.id)">
+      <button
+        v-show="!task.complete"
+        @click="$emit('complete', task.id)"
+        data-jest="complete-task-btn"
+      >
         <img src="@/assets/images/check-square.svg" alt="" />
       </button>
-      <button @click="$emit('delete', task.id)">
+      <button @click="$emit('delete', task.id)" data-jest="delete-task-btn">
         <img src="@/assets/images/trash.svg" alt="" />
       </button>
     </div>
