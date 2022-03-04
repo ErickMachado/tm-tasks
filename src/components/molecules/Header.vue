@@ -2,8 +2,12 @@
   <header class="header">
     <div class="header__tasks-info">
       <h1>Hello, {{ getUsername }}! 👋</h1>
-      <p>🕐 {{ getRemainingTasks.length }} task remaining</p>
-      <p>✅ {{ getCompletedTasks.length }} tasks completed</p>
+      <p data-testid="header__remaining-tasks">
+        🕐 {{ getRemainingTasks.length }} task remaining
+      </p>
+      <p data-testid="header__completed-tasks">
+        ✅ {{ getCompletedTasks.length }} tasks completed
+      </p>
     </div>
     <h2>{{ currentDate }}</h2>
   </header>
